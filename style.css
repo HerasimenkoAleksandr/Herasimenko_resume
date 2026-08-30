@@ -1,3 +1,277 @@
-.small-text {
+.text-justify {
+    text-align: justify;
+}
+
+/* =========================================================
+   GENERAL
+   ========================================================= */
+
+body {
+    background-color: #f1f3f5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #212529;
+    font-size: 14px;
+    line-height: 1.35;
+}
+
+.cv-page {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 35px 45px;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.cv-header {
+    background-color: #f1f3f5;
+    border-left: 5px solid #6c757d;
+    padding: 20px 25px;
+    margin-bottom: 22px;
+}
+
+.cv-header h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.cv-header h2 {
+    font-size: 18px;
+}
+
+.tech-line {
+    font-size: 14px;
+}
+
+.contact-info,
+.contact-links {
+    font-size: 13px;
+}
+
+.contact-links a {
+    margin-right: 18px;
+}
+
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
+section {
+    margin-bottom: 18px;
+}
+
+section h3 {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 3px;
+}
+
+section hr {
+    margin-top: 3px;
+    margin-bottom: 9px;
+    border-top: 1px solid #6c757d;
+}
+
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+p {
+    margin-bottom: 7px;
+}
+
+.small {
+    font-size: 12.5px !important;
+}
+
+
+/* =========================================================
+   PROJECTS / EXPERIENCE / EDUCATION
+   ========================================================= */
+
+.project,
+.experience,
+.education {
+    margin-bottom: 13px;
+}
+
+.project h4,
+.experience h4,
+.education h4 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.project-stack {
     font-size: 12px;
+    margin-bottom: 3px;
+}
+
+ul {
+    margin-top: 3px;
+    margin-bottom: 4px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 2px;
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a {
+    color: #212529;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #000;
+}
+
+
+/* =========================================================
+   PRINT
+   ========================================================= */
+
+@page {
+    size: A4;
+    margin: 10mm;
+}
+
+@media print {
+
+    html,
+    body {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        padding: 0;
+        background: white !important;
+    }
+
+    body {
+        font-size: 10.5px;
+        line-height: 1.2;
+    }
+
+    .cv-page {
+        width: 190mm;
+        max-width: none;
+        min-height: 277mm;
+
+        margin: 0;
+        padding: 0;
+
+        background: white !important;
+    }
+
+    .cv-header {
+        padding: 10px 15px;
+        margin-bottom: 10px;
+
+        background-color: #f1f3f5 !important;
+        border-left: 4px solid #6c757d;
+    }
+
+    .cv-header h1 {
+        font-size: 23px;
+        margin-bottom: 2px;
+    }
+
+    .cv-header h2 {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+
+    .tech-line {
+        font-size: 10.5px;
+        margin-bottom: 5px;
+    }
+
+    .contact-info,
+    .contact-links {
+        font-size: 9.5px;
+    }
+
+    .contact-info span {
+        margin-right: 10px !important;
+    }
+
+    .contact-links div {
+        margin-bottom: 1px !important;
+    }
+
+    section {
+        margin-bottom: 9px;
+    }
+
+    section h3 {
+        font-size: 11.5px;
+        margin-bottom: 2px;
+    }
+
+    section hr {
+        margin-top: 2px;
+        margin-bottom: 5px;
+    }
+
+    p {
+        margin-bottom: 3px;
+    }
+
+    .small {
+        font-size: 9.5px !important;
+    }
+
+    .project,
+    .experience,
+    .education {
+        margin-bottom: 6px;
+    }
+
+    .project h4,
+    .experience h4,
+    .education h4 {
+        font-size: 10.5px;
+        margin-bottom: 1px;
+    }
+
+    .project-stack {
+        font-size: 9px;
+        margin-bottom: 2px;
+    }
+
+    ul {
+        margin-top: 2px;
+        margin-bottom: 2px;
+        padding-left: 16px;
+    }
+
+    li {
+        margin-bottom: 1px;
+    }
+
+    a {
+        color: black !important;
+        text-decoration: underline;
+    }
+
+    /* Don't split individual blocks */
+    .project,
+    .experience,
+    .education,
+    .cv-header {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
 }
